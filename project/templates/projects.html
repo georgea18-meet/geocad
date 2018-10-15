@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for p in projects %}
+<div class="col-sm-6">
+	<center>
+		<div class="container project">
+			<div class="col-sm-12"><h1>{{p.name}}</h1></div>
+			<div class="col-sm-6">
+				<p class="text">
+					<b>תאריך:</b> {{p.year}},{{p.month}}<br>
+					<b>תיאור:</b> {{p.description|truncate(120)}}<br>
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<img src="{{url_for('static', filename='img/'+p.picture)}}" class="project-img">
+			</div>
+		</div>
+	</center>
+</div>
+{% endfor %}
+{% endblock %}

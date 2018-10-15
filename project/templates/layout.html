@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Hello</title>
+      <title>גיאוקד - מדידות וממ"ג בע"מ</title>
       <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
       <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="icon" href="https://www.globe.gov/globe-gov-home-portlet/images/learn-earth-system/learn-earth-system-clean.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=David+Libre|Secular+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
       <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
       <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
       <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </head>
   <body>
+    <div id="header">
+      <div class="opacity">
+        <center><br>
+          <h1 id="geocad">גיאוקד מדידות וממ"ג בע"מ</h1>
+          <!--<h2 class="sub-title">גיאודזיה | קדסטר | מיפוי | ממ"ג</h2>-->
+        </center>
+      </div>
+    </div>
+      <div class="col-sm-12" id="bar">
+        <a href="{{url_for('contact')}}"><div class="col-sm-2 bar-tab">צור קשר</div></a>
+        <div class="col-sm-2 bar-tab">שירותים</div>
+        <div class="col-sm-2 bar-tab">דרושים</div>
+        <a href="{{url_for('projects')}}"><div class="col-sm-2 bar-tab">פרוייקטים</div></a>
+        <div class="col-sm-2 bar-tab">אודות</div>
+        <a href="{{url_for('index')}}"><div class="col-sm-2 bar-tab">דף הבית</div></a>
+      </div>
       <!-- child template -->
       {% block content %}
       {% endblock %}
-
+  </body>
 </html>

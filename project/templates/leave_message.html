@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+	<div class="col-sm-12 container">
+		<div class="col-sm-1 text-left">
+			<a href="{{url_for('contact')}}"><i class="material-icons">arrow_back</i>חזרה</a>
+		</div>
+		<div class="col-sm-11">
+			<h1 class="main-title">צור קשר</h1>
+		</div>
+		<div class="col-sm-12">
+			<form method="POST">
+				<label>:דוא"ל</label><br>
+				<center><input type="email" name="email" placeholder='דוא"ל' class="input-fields"></center>
+				<label>:הודעה</label>
+				<center><textarea name="message" placeholder="...כתוב לנו" class="input-fields" style="height: 250px;"></textarea></center>
+				<center><input type="submit" name="submit" value="שלח" class="btn "></center>
+			</form>
+		</div>
+	</div>
+</center>
+{% endblock %}

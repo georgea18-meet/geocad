@@ -1,3 +1,120 @@
-h1 {
-  color: blue;
+body{
+	text-align: right;
+	/*background: #ED8B0B;*/
+}
+
+#header{
+	background: url("http://www.senecacollege.ca/content/dam/projects/seneca/Program%202018/cvt_top.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 110%;
+	height: 25vh;
+}
+
+.opacity{
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.2);
+}
+
+#bar{
+	overflow: auto;
+	position: sticky;
+	top: 0;
+	padding: 0;
+	height: 7.5vh;
+	z-index: 1;
+	background: #023D5A;
+}
+
+#geocad{
+	margin: 0;
+	font-family: 'Secular One', sans-serif;
+	color: #EEEDE9;
+	font-size: 7em;
+	text-shadow: 3px 3px rgba(00,00,00,0.3);
+}
+
+.sub-title{
+	margin: 0;
+	color: #E23131;
+	font-size: 3em;
+	font-family: 'David Libre', serif;
+	text-shadow: 1px 1px rgba(00,00,00,0.3);
+}
+
+.bar-tab{
+	height: 7.5vh;
+	text-align: center;
+	color: #EEEDE9;
+	font-size: 2em;
+	font-family: 'David Libre', serif;
+}
+
+.bar-tab:hover{
+	background-color: #EEEDE9;
+	color: #E23131;
+	cursor: pointer;
+}
+
+.container{
+	text-align: right;
+	font-size: 1.5em;
+	font-family: 'David Libre', serif;
+	padding: 10px;
+	margin: 10px 2.5%;
+	background-color: #EEEDE9;
+	color: #E23131;
+	width: 95%;
+	box-shadow: 5px 5px rgba(00,00,00,0.3);
+}
+
+.project{
+	width: 90%;
+	padding: 0 10px;
+	height: 350px;
+}
+
+.project-img{
+	width: 100%;
+}
+
+.text{
+	text-align: right;
+}
+
+.main-title{
+	font-family: 'David Libre', serif;
+	font-size: 3em;
+	color: #43A8C6;
+}
+
+.icon-main{
+	font-size: 6em;
+	color: #43A8C6;	
+}
+
+.text-left{
+	text-align: left;
+}
+
+.input-fields{
+	width: 95%;
+	box-shadow: 1px 1px rgba(00,00,00,0.2);
+	border-radius: 5px;
+}
+
+.mheader{
+	color: #EEEDE9;
+	font-size: 3em;
+	font-family: 'David Libre', serif;
+	background-color: #023D5A;
+	text-align: center;
+}
+
+.mbody{
+	background-color: #EEEDE9;
+	height: 400px;
+	color: #E23131;
+	font-family: 'David Libre', serif;
 }

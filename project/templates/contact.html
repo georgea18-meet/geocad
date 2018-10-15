@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+	<div class="col-sm-12 container">
+		<div class="col-sm-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.285248221391!2d35.30625941258663!3d32.70504453187001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c4e83ba3fd4c7%3A0x3236c036cf126cd4!2zNjAxMCA0M9iMINin2YTZhtin2LXYsdip!5e0!3m2!1sar!2sil!4v1539548574434" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="col-sm-6 text">
+			<h1 class="main-title">צור קשר</h1>
+			<p>
+				<br>
+				0503252003 <i class="material-icons">phone</i><br><br>
+				<a href="mailto:a-dauod@zahav.co.il">a-dauod@zahav.co.il</a><i class="material-icons">alternate_email</i><br><br>
+				6010 43, נצרת <i class="material-icons">business</i><br><br>
+				<!--<a href="{{url_for('message')}}">-->
+				<a data-toggle="modal" href="#msg-modal">פנה אלינו דרך האתר</a><i class="material-icons">mail_outline</i>
+			</p>
+		</div>
+	</div>
+</center>
+
+<div class="modal fade" id="msg-modal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header mheader">
+				<h1>פנה אלינו</h1>
+			</div>
+			<div class="modal-body mbody">
+				<div class="col-sm-12">
+					<form method="POST" action="{{url_for('message')}}">
+						<label>:דוא"ל</label><br>
+						<center><input type="email" name="email" placeholder='דוא"ל' class="input-fields"></center>
+						<label>:הודעה</label>
+						<center><textarea name="message" placeholder="...כתוב לנו" class="input-fields" style="height: 250px;"></textarea></center>
+						<center><input type="submit" name="submit" value="שלח" class="btn" onclick="alert('.תודה שפניתם אלינו! נחזור אליכם בהקדם האפשרי')"></center>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

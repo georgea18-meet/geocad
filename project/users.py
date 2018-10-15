@@ -12,6 +12,12 @@ from project.models import User
 
 users_bp = Blueprint('users', __name__)
 
+def get_hebrew_word(s):
+    w = s.split(",")
+    word = ""
+    for l in w:
+        word+=chr(int(l))
+    return word
 
 @users_bp.route('/register', methods=['GET', 'POST'])
 def register():
